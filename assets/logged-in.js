@@ -9,10 +9,21 @@
           $(ul).after('<li class="nav-item"><a href="/app/grants" class="nav-link ember-view">Grants</a></li>');
           var loginbtn = document.getElementById('login-button');
           loginbtn.style.visibility = 'hidden';
+        } else {
+          timestampLoginLink()
         }
       },
       error: function() {
-         //do nothing
+        timestampLoginLink()
       }
     });
   });
+  
+  function timestampLoginLink()  {
+    if ($('#login-link')) {
+      $('#login-link').attr('href',"/app/?_=" + new Date().getTime());
+    }
+    if ($('#get-started-link')) {
+      $('#get-started-link').attr('href',"/app/?_=" + new Date().getTime());
+    }
+  }
