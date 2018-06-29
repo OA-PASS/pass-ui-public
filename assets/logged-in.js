@@ -1,5 +1,7 @@
   $(document).ready(function() {
-    $.ajax("/app/", {
+    $.ajax({
+      url: "/app/",
+      cache: false,
       success: function(data) {
         if (data.indexOf("<title>PASS</title>")>0) {
           var ul = document.getElementsByClassName("navbar-nav")[0].getElementsByTagName("li")[0];
