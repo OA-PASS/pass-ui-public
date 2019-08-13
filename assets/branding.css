@@ -1,12 +1,25 @@
 @import url('fonts.css');
 
 :root {
+  --harrys-crimson: #A51C30;
+  --cambridge-red: #EB001B;
+  --breakthrough-blue: #0579B8;
+  --bookmark-blue: #3E6F7D;
+  --brilliant-yellow: #F8C21C;
+
+  --h-black: #1E1E1E;
+  --h-gray-1: #414141;
+  --h-gray-2: #6C6C6C;
+  --h-gray-3: #C0C0C0;
+  --h-gray-4: #F3F3F3;
+  --h-gray-5: #F9F9F9;
+
   --jhu-bg-primary: white;
 
   /* JHU Primary Colors */
-  --jhu-blue-spirit: #68ACE5;
+  /* --jhu-blue-spirit: #68ACE5;
   --jhu-blue-heritage: #002D72;
-  --jhu-black: #31261D;
+  --jhu-black: #31261D; */
 
   /* JHU Secondary Colors */
   --jhu-secondary-1: #CF4520;
@@ -31,48 +44,20 @@
   --jhu-accent-12: #286140;
   --jhu-accent-13: #179949;
 
-  /* JHU Fonts */
-  --font-headline: quadon-regular, tahoma;
-  --font-subhead: quadon-regular, tahoma;
-  --font-bodycopy-accent: quadon-regular, tahoma;
-  --font-bodycopy: gentona-light, tahoma;
+  /* Fonts */
+  --font-headline: trueno-bold, sans-serif;
+  --font-subhead: lora-bold, sans-serif;
+  --font-bodycopy-accent: trueno-regular, sans-serif;
+  --font-bodycopy: lora-regular, sans-serif;
 
   /* Other colors */
   --btn-active-color: #C9C9C9;
-  --header-color: #4A484C;
+  --header-color: var(--h-black);
 }
-
-/* ---------------- */
-/* .bg-main {
-  background-color: white;
-}
-.bg1 {
-  background-color: var(--jhu-blue-heritage);
-}
-.bg2 {
-  background-color: var(--jhu-blue-spirit);
-}
-.bg-primary {
-  background-color: var(--jhu-accent-10);
-}
-
-.text-white {
-  color: white;
-}
-.text-black {
-  color: var(--jhu-black);
-}
-.text-link {
-  color: var(--jhu-secondary-5);
-}
-.text-link:hover {
-  color: var(--jhu-accent-10);
-} */
-/* ---------------- */
 
 body {
   font-family: var(--font-bodycopy);
-  color: var(--jhu-black);
+  color: var(--h-gray-1);
 }
 h1, h2, h3, h4, h5 {
   font-family: var(--font-headline);
@@ -81,14 +66,14 @@ h1, h2 {
   color: var(--header-color);
 }
 a, .btn-link {
-  color: var(--jhu-secondary-5);
+  color: var(--breakthrough-blue);
 }
 a:hover, .btn-link:hover {
- color: var(--jhu-accent-10);
+ color: var(--bookmark-blue);
 }
 
 /* Buttons */
-.btn-primary {
+/* .btn-primary {
   background-color: var(--jhu-secondary-5);
   border-color: var(--jhu-secondary-5);
   color:white;
@@ -96,11 +81,11 @@ a:hover, .btn-link:hover {
 .btn-primary:hover {
   background-color: var(--jhu-accent-10);
   border-color: var(--jhu-accent-10);
-}
+} */
 /*
  * This mess must be done in order to properly override Bootstrap styles for a clicked button
  */
-.btn-primary:not(:disabled):not(.disabled):active {
+/* .btn-primary:not(:disabled):not(.disabled):active {
   background-color: var(--jhu-accent-10);
   border-color: var(--jhu-accent-10);
 }
@@ -129,7 +114,7 @@ a:hover, .btn-link:hover {
 .btn-danger:not(:disabled):not(.disabled):active {
   background-color: var(--jhu-accent-7);
   border-color: var(--jhu-accent-7);
-}
+} */
 
 .btn {
   font-size: 1em !important;
@@ -137,15 +122,12 @@ a:hover, .btn-link:hover {
 
 /* Header */
 #brand-site-container {
-  background-color: var(--jhu-bg-primary);
-  /* background-color: var(--jhu-blue-spirit); */
+  background-color: var(--h-gray-5);
 }
 #brand-header {
-  background-color: var(--jhu-blue-heritage);
-  color: var(--jhu-blue-spirit);
+  background-color: var(--harrys-crimson);
 }
 #brand-header-title {
-  /* color: var(--jhu-blue-spirit); */
   color: white;
 }
 #header-navbar {
@@ -155,13 +137,13 @@ a:hover, .btn-link:hover {
   font-weight: bold;
 }
 #header-navbar .nav-link {
-  color: var(--jhu-black);
+  color: var(--h-black);
 }
 #user-menu {
-  color: var(--jhu-black);
+  color: var(--h-black);
 }
 #user-menu-title {
-  background-color: var(--jhu-secondary-5);
+  background-color: var(--h-gray-4);
   color: white;
 }
 #user-menu .dropdown-item:active {
@@ -173,45 +155,51 @@ a:hover, .btn-link:hover {
   margin-right: -35px;
   margin-bottom: -10px;
 }
+.app-footer {
+  background-color: var(--h-black);
+  color: white;
+}
 
 /* Status icons */
-.manuscript-required>.fa-circle, .manuscript-required .fa-info-circle,
+/* .manuscript-required>.fa-circle, .manuscript-required .fa-info-circle,
 .approval-requested>.fa-circle, .approval-requested .fa-info-circle,
 .changes-requested>.fa-circle, .changes-requested .fa-info-circle,
 .needs-attention>.fa-circle, .needs-attention .fa-info-circle,
 .stalled>.fa-circle, .stalled .fa-info-circle,
 .failed>.fa-circle, .failed .fa-info-circle,
 .rejected>.fa-circle, .rejected .fa-info-circle {
-  color: var(--jhu-secondary-6);
+  color: var(--brilliant-yellow);
 }
 .cancelled>.fa-circle, .cancelled .fa-info-circle,
 .not-submitted>.fa-circle, .not-submitted .fa-info-circle {
-  color: var(--jhu-accent-10);
+  color: var(--breakthrough-blue);
 }
 .submitted>.fa-circle, .submitted .fa-info-circle,
 .complete>.fa-circle, .complete .fa-info-circle {
-  color: var(--jhu-accent-11);
-}
+  color: var(--bookmark-blue);
+} */
 .draft>.fa-circle, .draft .fa-info-circle {
   color: gray;
 }
 
 /* Submission workflow */
 #proxy-input-block {
-  background-color: var(--jhu-blue-spirit);
-  color: var(--jhu-black);
+  background-color: var(--h-gray-4);
+  color: var(--h-black);
+  background-color: var(--h-gray-3);
 }
 #on-behalf-of-block {
-  background-color: var(--jhu-blue-spirit);
-  color: var(--jhu-black);
+  background-color: var(--h-gray-4);
+  color: var(--h-black);
+  border-color: var(--h-gray-3);
 }
 
 th.table-header > i {
-  color: var(--jhu-black);
+  color: var(--h-black);
   opacity: 0.8;
 }
 #grant-details-title .back-arrow, #submission-details-title .back-arrow {
-  color: var(--jhu-black);
+  color: var(--h-black);
   opacity: 0.7;
 }
 #grant-details-title .back-arrow:hover,
