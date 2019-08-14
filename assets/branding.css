@@ -129,25 +129,32 @@ a:hover, .btn-link:hover {
 }
 #brand-header-title {
   color: white;
+  font-family: trueno-regular, sans-serif;
 }
 #header-navbar {
-  font-family: var(--font-bodycopy);
+  font-family: var(--font-bodycopy-accent);
+  background-color: var(--h-gray-1);
+  padding: 0;
+}
+#header-navbar .nav-item {
+  padding: 0 6px;
 }
 #header-navbar .nav-item .active {
   font-weight: bold;
 }
 #header-navbar .nav-link {
-  color: var(--h-black);
+  color: white;
+  font-size: 16px;
 }
 #user-menu {
-  color: var(--h-black);
+  color: white;
 }
 #user-menu-title {
   background-color: var(--h-gray-4);
-  color: white;
+  color: var(--h-gray-2);
 }
 #user-menu .dropdown-item:active {
-  background-color: var(--btn-active-color);
+  background-color: var(--h-gray-1);
 }
 #brand-logo {
   height: 110px;
@@ -156,7 +163,7 @@ a:hover, .btn-link:hover {
   margin-bottom: -10px;
 }
 .app-footer {
-  background-color: var(--h-black);
+  background-color: var(--h-gray-1);
   color: white;
 }
 
