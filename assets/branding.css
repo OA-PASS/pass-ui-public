@@ -105,6 +105,7 @@ a:hover, .btn-link:hover {
   font-family: var(--font-bodycopy-accent);
   background-color: var(--h-gray-1);
   padding: 0;
+  margin-bottom: 1rem;
 }
 #header-navbar .nav-item {
   padding: 0 6px;
@@ -135,6 +136,7 @@ a:hover, .btn-link:hover {
 .app-footer {
   background-color: var(--h-gray-1);
   color: white;
+  border: 0;
 }
 
 /* Status icons */
