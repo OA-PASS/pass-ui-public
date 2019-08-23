@@ -96,6 +96,7 @@ a:hover, .btn-link:hover {
 }
 #brand-header {
   background-color: var(--harrys-crimson);
+  height: 100px;
 }
 #brand-header-title {
   color: white;
@@ -128,7 +129,7 @@ a:hover, .btn-link:hover {
   background-color: var(--h-gray-1);
 }
 #brand-logo {
-  height: 110px;
+  width: 300px;
   margin-top: -10px;
   margin-right: -35px;
   margin-bottom: -10px;
@@ -137,6 +138,49 @@ a:hover, .btn-link:hover {
   background-color: var(--h-gray-1);
   color: white;
   border: 0;
+}
+/** Harvard Library-like design */
+#brand-header {
+  background-color: white;
+  height: 100px;
+}
+#brand-header-title {
+  color: var(--h-black);
+}
+#brand-logo {
+  position: relative;
+  top: 30px;
+  z-index: 99999;
+  width: initial;
+}
+#header-navbar {
+  background-color: var(--h-gray-4);
+}
+#header-navbar ul {
+  margin-right: 100px;
+}
+#header-navbar .nav-link {
+  color: var(--h-gray-1);
+}
+#login-link {
+  background-color: var(--h-gray-4);
+  border-color: var(--h-gray-4);
+  color: var(--h-black);
+}
+#login-link:hover {
+  text-decoration: underline;
+}
+#login-link:hover i.fa.fa-lock {
+  color: var(--harrys-crimson);
+}
+#login-link i.fa.fa-lock {
+  color: var(--h-black);
+}
+
+#get-started-link {
+  background-color: var(--harrys-crimson);
+  border-color: var(--harrys-crimson);
+  font-family: var(--font-bodycopy-accent);
 }
 
 /* Status icons */
