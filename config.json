@@ -3,6 +3,7 @@
   "branding": {
     "homepage": "https://www.harvard.edu/",
     "logo": "img/logo-final.svg",
-    "stylesheet": "assets/branding.css"
+    "stylesheet": "assets/branding.css",
+    "favicon": "favicon.png"
   }
 }
