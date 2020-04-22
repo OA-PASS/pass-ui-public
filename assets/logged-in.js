@@ -1,5 +1,5 @@
   $(document).ready(function() {
-    document.querySelector('.info-banner').setAttribute('href', `/app/?_=${new Date().getTime()}&covid=true`);
+    document.querySelector('.info-banner').setAttribute('href', `/app/submissions/new/basics/?_=${new Date().getTime()}&covid=true`);
 
     $.ajax({
       url: "/app/",
@@ -12,7 +12,7 @@
           var loginbtn = document.getElementById('login-button');
           loginbtn.style.visibility = 'hidden';
 
-          document.querySelector('.info-banner').setAttribute('href', `/app/?_=${new Date().getTime()}&covid=true`);
+          document.querySelector('.info-banner').setAttribute('href', `/app/submissions/new/basics/?_=${new Date().getTime()}&covid=true`);
         } else {
           timestampLoginLink();
         }
