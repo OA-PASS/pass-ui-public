@@ -2,7 +2,7 @@
     document.querySelector('.info-banner').setAttribute('href', `/app/submissions/new/basics/?_=${new Date().getTime()}&covid=true`);
 
     $.ajax({
-      url: "/authenticated",
+      url: "/auth/authenticated",
       cache: false,
       success: function() {
         var ul = document.getElementsByClassName("navbar-nav")[0].getElementsByTagName("li")[0];
